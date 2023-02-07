@@ -67,9 +67,7 @@ public class pet{
       
       else
       System.out.print("5 ");
-      
-      
-      
+     
       return max;
     }
     
