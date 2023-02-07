@@ -23,7 +23,7 @@ public class pet{
     
     public static int max(int[][] grades){
       
-      int sum1 = 0;                    //finds the sum of each column of the 2d array
+      int sum1 = 0;                    //finds the sum of each row of the 2d array
       for(int row = 0; row < 4; row++){
       sum1 += grades[0][row];
       } 
