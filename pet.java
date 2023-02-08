@@ -23,28 +23,21 @@ public class pet{
     
     public static int max(int[][] grades){
       
-      int sum1 = 0;                    //finds the sum of each row of the 2d array
-      for(int row = 0; row < 4; row++){
-      sum1 += grades[0][row];
-      } 
+      int sum1 = 0;
       int sum2 = 0;
-      for(int row = 0; row < 4; row++){
-      sum2 += grades[1][row];
-      }
       int sum3 = 0;
-      for(int row = 0; row < 4; row++){
-      sum3 += grades[2][row];
-      }
       int sum4 = 0;
-      for(int row = 0; row < 4; row++){
-      sum4 += grades[3][row];
-      }
       int sum5 = 0;
-      for(int row = 0; row < 4; row++){
-      sum5 += grades[4][row];
-      }
       
-      int[] sums = {sum1, sum2, sum3, sum4, sum5}; //puts all of the sums into a new array
+      for(int row = 0; row < 4; row++){//finds the sum of each row of the 2d array
+         sum1 += grades[0][row];
+         sum2 += grades[1][row];
+         sum3 += grades[2][row];
+         sum4 += grades[3][row];
+         sum5 += grades[4][row];
+      } 
+      
+      int[] sums = {sum1, sum2, sum3, sum4, sum5};//puts all of the sums into a new array
       
       int max = sums[0];
       for(int i = 1; i<sums.length; i++){ //finds the max value of the sums
